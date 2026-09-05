@@ -1,1 +1,262 @@
+import tkinter as tk
 
+
+def add_to_display(value):
+    if display.get() == "Error":
+        display.delete(0, tk.END)
+
+    display.insert(tk.END, value)
+
+
+def clear():
+    display.delete(0, tk.END)
+
+
+def delete_last():
+    text = display.get()
+
+    if text:
+        display.delete(len(text) - 1, tk.END)
+
+
+def calculate():
+    expression = display.get()
+
+    try:
+        expression = expression.replace("×", "*")
+        expression = expression.replace("÷", "/")
+        expression = expression.replace("−", "-")
+
+        answer = eval(expression, {"__builtins__": None}, {})
+
+        if isinstance(answer, float) and answer.is_integer():
+            answer = int(answer)
+
+        display.delete(0, tk.END)
+        display.insert(0, str(answer))
+
+    except (SyntaxError, TypeError, ZeroDivisionError, NameError):
+        display.delete(0, tk.END)
+        display.insert(0, "Error")
+
+
+def percentage():
+    try:
+        number = float(display.get())
+        answer = number / 100
+
+        if answer.is_integer():
+            answer = int(answer)
+
+        display.delete(0, tk.END)
+        display.insert(0, str(answer))
+
+    except ValueError:
+        display.delete(0, tk.END)
+        display.insert(0, "Error")
+
+
+def plus_minus():
+    try:
+        number = float(display.get())
+        number = -number
+
+        if number.is_integer():
+            number = int(number)
+
+        display.delete(0, tk.END)
+        display.insert(0, str(number))
+
+    except ValueError:
+        display.delete(0, tk.END)
+        display.insert(0, "Error")
+
+
+def keyboard(event):
+    key = event.char
+
+    if key in "0123456789.+-":
+        add_to_display(key)
+
+    elif key == "*":
+        add_to_display("×")
+
+    elif key == "/":
+        add_to_display("÷")
+
+    elif event.keysym == "Return":
+        calculate()
+
+    elif event.keysym == "BackSpace":
+        delete_last()
+
+    elif event.keysym == "Escape":
+        clear()
+
+
+def make_button(parent, text, row, column, command,
+                bg="#202738", fg="white"):
+
+    button = tk.Button(
+        parent,
+        text=text,
+        command=command,
+        font=("Segoe UI", 16, "bold"),
+        bg=bg,
+        fg=fg,
+        activebackground="#00c9b1",
+        activeforeground="white",
+        border=0,
+        cursor="hand2"
+    )
+
+    button.grid(
+        row=row,
+        column=column,
+        padx=6,
+        pady=6,
+        sticky="nsew"
+    )
+
+
+# Main window
+root = tk.Tk()
+root.title("Anuragh's Calculator")
+root.geometry("390x600")
+root.resizable(False, False)
+root.configure(bg="#10131c")
+
+
+# Title
+top = tk.Frame(root, bg="#10131c")
+top.pack(fill="x", padx=25, pady=(20, 5))
+
+title = tk.Label(
+    top,
+    text="MY CALCULATOR",
+    font=("Segoe UI", 20, "bold"),
+    fg="#00f5d4",
+    bg="#10131c"
+)
+title.pack(side="left")
+
+version = tk.Label(
+    top,
+    text="Python",
+    font=("Segoe UI", 10),
+    fg="#7f8caa",
+    bg="#10131c"
+)
+version.pack(side="right", pady=7)
+
+
+# Display
+display_box = tk.Frame(
+    root,
+    bg="#191e2b",
+    highlightbackground="#00f5d4",
+    highlightthickness=1
+)
+display_box.pack(fill="x", padx=20, pady=15)
+
+display = tk.Entry(
+    display_box,
+    font=("Segoe UI", 30, "bold"),
+    bg="#191e2b",
+    fg="white",
+    insertbackground="#00f5d4",
+    border=0,
+    justify="right"
+)
+display.pack(fill="x", padx=15, pady=25)
+
+
+# Calculator buttons
+buttons = tk.Frame(root, bg="#10131c")
+buttons.pack(fill="both", expand=True, padx=20, pady=5)
+
+for i in range(4):
+    buttons.columnconfigure(i, weight=1)
+
+for i in range(5):
+    buttons.rowconfigure(i, weight=1)
+
+
+# Top row
+make_button(buttons, "AC", 0, 0, clear, "#e63973")
+make_button(buttons, "⌫", 0, 1, delete_last, "#3a4358")
+make_button(buttons, "%", 0, 2, percentage, "#3a4358")
+make_button(
+    buttons,
+    "÷",
+    0,
+    3,
+    lambda: add_to_display("÷"),
+    "#00a896"
+)
+
+
+# 7 8 9
+make_button(buttons, "7", 1, 0, lambda: add_to_display("7"))
+make_button(buttons, "8", 1, 1, lambda: add_to_display("8"))
+make_button(buttons, "9", 1, 2, lambda: add_to_display("9"))
+make_button(
+    buttons,
+    "×",
+    1,
+    3,
+    lambda: add_to_display("×"),
+    "#00a896"
+)
+
+
+# 4 5 6
+make_button(buttons, "4", 2, 0, lambda: add_to_display("4"))
+make_button(buttons, "5", 2, 1, lambda: add_to_display("5"))
+make_button(buttons, "6", 2, 2, lambda: add_to_display("6"))
+make_button(
+    buttons,
+    "−",
+    2,
+    3,
+    lambda: add_to_display("−"),
+    "#00a896"
+)
+
+
+# 1 2 3
+make_button(buttons, "1", 3, 0, lambda: add_to_display("1"))
+make_button(buttons, "2", 3, 1, lambda: add_to_display("2"))
+make_button(buttons, "3", 3, 2, lambda: add_to_display("3"))
+make_button(
+    buttons,
+    "+",
+    3,
+    3,
+    lambda: add_to_display("+"),
+    "#00a896"
+)
+
+
+# Bottom row
+make_button(buttons, "±", 4, 0, plus_minus, "#3a4358")
+make_button(buttons, "0", 4, 1, lambda: add_to_display("0"))
+make_button(buttons, ".", 4, 2, lambda: add_to_display("."))
+
+make_button(
+    buttons,
+    "=",
+    4,
+    3,
+    calculate,
+    "#00f5d4",
+    "#10131c"
+)
+
+
+# Keyboard support
+root.bind("<Key>", keyboard)
+
+display.focus()
+
+root.mainloop()
