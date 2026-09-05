@@ -1,0 +1,167 @@
+[
+    {
+        "id": "S001",
+        "name": "Aarav Sharma",
+        "age": 19,
+        "gender": "Male",
+        "course": "Computer Science",
+        "year": "2nd Year",
+        "email": "aarav.sharma@example.com",
+        "phone": "9876543210",
+        "marks": 86
+    },
+    {
+        "id": "S002",
+        "name": "Ananya Reddy",
+        "age": 20,
+        "gender": "Female",
+        "course": "Information Technology",
+        "year": "3rd Year",
+        "email": "ananya.reddy@example.com",
+        "phone": "9123456789",
+        "marks": 92
+    },
+    {
+        "id": "S003",
+        "name": "Rahul Verma",
+        "age": 18,
+        "gender": "Male",
+        "course": "Electronics",
+        "year": "1st Year",
+        "email": "rahul.verma@example.com",
+        "phone": "9988776655",
+        "marks": 78
+    },
+    {
+        "id": "S004",
+        "name": "Sneha Rao",
+        "age": 21,
+        "gender": "Female",
+        "course": "Mechanical Engineering",
+        "year": "4th Year",
+        "email": "sneha.rao@example.com",
+        "phone": "9012345678",
+        "marks": 88
+    },
+    {
+        "id": "S005",
+        "name": "Arjun Kumar",
+        "age": 19,
+        "gender": "Male",
+        "course": "Civil Engineering",
+        "year": "2nd Year",
+        "email": "arjun.kumar@example.com",
+        "phone": "9345678120",
+        "marks": 74
+    },
+    {
+        "id": "S006",
+        "name": "Priya Nair",
+        "age": 20,
+        "gender": "Female",
+        "course": "Computer Science",
+        "year": "3rd Year",
+        "email": "priya.nair@example.com",
+        "phone": "9865432107",
+        "marks": 95
+    },
+    {
+        "id": "S007",
+        "name": "Vikram Singh",
+        "age": 18,
+        "gender": "Male",
+        "course": "Artificial Intelligence",
+        "year": "1st Year",
+        "email": "vikram.singh@example.com",
+        "phone": "9765432108",
+        "marks": 81
+    },
+    {
+        "id": "S008",
+        "name": "Meera Patel",
+        "age": 21,
+        "gender": "Female",
+        "course": "Data Science",
+        "year": "4th Year",
+        "email": "meera.patel@example.com",
+        "phone": "9654321078",
+        "marks": 90
+    },
+    {
+        "id": "S009",
+        "name": "Karthik Reddy",
+        "age": 19,
+        "gender": "Male",
+        "course": "Information Technology",
+        "year": "2nd Year",
+        "email": "karthik.reddy@example.com",
+        "phone": "9543210786",
+        "marks": 69
+    },
+    {
+        "id": "S010",
+        "name": "Ishita Gupta",
+        "age": 20,
+        "gender": "Female",
+        "course": "Computer Science",
+        "year": "3rd Year",
+        "email": "ishita.gupta@example.com",
+        "phone": "9432107865",
+        "marks": 97
+    },
+    {
+        "id": "S011",
+        "name": "Rohan Das",
+        "age": 18,
+        "gender": "Male",
+        "course": "Electrical Engineering",
+        "year": "1st Year",
+        "email": "rohan.das@example.com",
+        "phone": "9321078654",
+        "marks": 76
+    },
+    {
+        "id": "S012",
+        "name": "Pooja Menon",
+        "age": 21,
+        "gender": "Female",
+        "course": "Biotechnology",
+        "year": "4th Year",
+        "email": "pooja.menon@example.com",
+        "phone": "9210786543",
+        "marks": 84
+    },
+    {
+        "id": "S013",
+        "name": "Aditya Joshi",
+        "age": 19,
+        "gender": "Male",
+        "course": "Artificial Intelligence",
+        "year": "2nd Year",
+        "email": "aditya.joshi@example.com",
+        "phone": "9107865432",
+        "marks": 89
+    },
+    {
+        "id": "S014",
+        "name": "Divya Iyer",
+        "age": 20,
+        "gender": "Female",
+        "course": "Data Science",
+        "year": "3rd Year",
+        "email": "divya.iyer@example.com",
+        "phone": "9898765432",
+        "marks": 93
+    },
+    {
+        "id": "S015",
+        "name": "Nikhil Rao",
+        "age": 18,
+        "gender": "Male",
+        "course": "Electronics",
+        "year": "1st Year",
+        "email": "nikhil.rao@example.com",
+        "phone": "9787654321",
+        "marks": 71
+    }
+]
