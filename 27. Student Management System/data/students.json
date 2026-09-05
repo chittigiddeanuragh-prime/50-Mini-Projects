@@ -1,0 +1,182 @@
+[
+    {
+        "id": "S001",
+        "name": "Anuragh",
+        "age": 20,
+        "gender": "Male",
+        "department": "Computer Science",
+        "course": "Python Programming",
+        "marks": 100.0
+    },
+    {
+        "id": "S002",
+        "name": "Rahul",
+        "age": 21,
+        "gender": "Male",
+        "department": "Physics",
+        "course": "Quantum Physics",
+        "marks": 76
+    },
+    {
+        "id": "S003",
+        "name": "Priya",
+        "age": 20,
+        "gender": "Female",
+        "department": "Mathematics",
+        "course": "Calculus",
+        "marks": 92
+    },
+    {
+        "id": "S004",
+        "name": "Arjun",
+        "age": 22,
+        "gender": "Male",
+        "department": "Mechanical Engineering",
+        "course": "Thermodynamics",
+        "marks": 90.0
+    },
+    {
+        "id": "S005",
+        "name": "Sneha",
+        "age": 19,
+        "gender": "Female",
+        "department": "Computer Science",
+        "course": "Data Structures",
+        "marks": 95
+    },
+    {
+        "id": "S006",
+        "name": "Vikram",
+        "age": 21,
+        "gender": "Male",
+        "department": "Electrical Engineering",
+        "course": "Circuit Theory",
+        "marks": 78
+    },
+    {
+        "id": "S007",
+        "name": "Kavya",
+        "age": 20,
+        "gender": "Female",
+        "department": "Chemistry",
+        "course": "Organic Chemistry",
+        "marks": 88
+    },
+    {
+        "id": "S008",
+        "name": "Rohan",
+        "age": 22,
+        "gender": "Male",
+        "department": "Mathematics",
+        "course": "Statistics",
+        "marks": 74
+    },
+    {
+        "id": "S009",
+        "name": "Divya",
+        "age": 19,
+        "gender": "Female",
+        "department": "Physics",
+        "course": "Classical Mechanics",
+        "marks": 91
+    },
+    {
+        "id": "S010",
+        "name": "Kiran",
+        "age": 21,
+        "gender": "Male",
+        "department": "Computer Science",
+        "course": "Database Systems",
+        "marks": 50.0
+    },
+    {
+        "id": "S011",
+        "name": "Meera",
+        "age": 20,
+        "gender": "Female",
+        "department": "Biotechnology",
+        "course": "Genetics",
+        "marks": 89
+    },
+    {
+        "id": "S012",
+        "name": "Aditya",
+        "age": 23,
+        "gender": "Male",
+        "department": "Civil Engineering",
+        "course": "Structural Engineering",
+        "marks": 72
+    },
+    {
+        "id": "S013",
+        "name": "Ishita",
+        "age": 21,
+        "gender": "Female",
+        "department": "Computer Science",
+        "course": "Machine Learning",
+        "marks": 96
+    },
+    {
+        "id": "S014",
+        "name": "Nikhil",
+        "age": 20,
+        "gender": "Male",
+        "department": "Electrical Engineering",
+        "course": "Digital Electronics",
+        "marks": 83
+    },
+    {
+        "id": "S015",
+        "name": "Ananya",
+        "age": 19,
+        "gender": "Female",
+        "department": "Mathematics",
+        "course": "Linear Algebra",
+        "marks": 90
+    },
+    {
+        "id": "S016",
+        "name": "Varun",
+        "age": 22,
+        "gender": "Male",
+        "department": "Mechanical Engineering",
+        "course": "Fluid Mechanics",
+        "marks": 79
+    },
+    {
+        "id": "S017",
+        "name": "Pooja",
+        "age": 20,
+        "gender": "Female",
+        "department": "Chemistry",
+        "course": "Inorganic Chemistry",
+        "marks": 86
+    },
+    {
+        "id": "S018",
+        "name": "Sanjay",
+        "age": 21,
+        "gender": "Male",
+        "department": "Civil Engineering",
+        "course": "Surveying",
+        "marks": 75
+    },
+    {
+        "id": "S019",
+        "name": "Neha",
+        "age": 19,
+        "gender": "Female",
+        "department": "Biotechnology",
+        "course": "Microbiology",
+        "marks": 93
+    },
+    {
+        "id": "S020",
+        "name": "Manoj",
+        "age": 22,
+        "gender": "Male",
+        "department": "Physics",
+        "course": "Electromagnetism",
+        "marks": 82
+    }
+]
